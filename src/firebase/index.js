@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-/*require('dotenv').config()
-console.log(process.env)*/
 
 const firebaseConfig = {
     apiKey: "API_KEY",
@@ -16,4 +14,5 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export {auth}
+
 
