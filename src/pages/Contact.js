@@ -63,10 +63,11 @@ const Contact = () => {
                                 ul.Krakowska 2, 30-000 Kraków
                             </div>
                             <div className="contacts_localization_details_item_map">
-                            <iframe title="iframe"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8531045387253!2d19.94007041495425!3d50.051583023906616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6bb7af3f6b%3A0xc1adf6af3a6a7338!2sKrakowska%202%2C%2033-332%20Krak%C3%B3w!5e0!3m2!1sen!2spl!4v1671122309300!5m2!1sen!2spl"
-                                width="400" height="300" style={{border:"0"}} allowFullScreen="" loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe title="iframe" className="contacts_localization_details_item_map_iframe"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8531045387253!2d19.94007041495425!3d50.051583023906616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6bb7af3f6b%3A0xc1adf6af3a6a7338!2sKrakowska%202%2C%2033-332%20Krak%C3%B3w!5e0!3m2!1sen!2spl!4v1671122309300!5m2!1sen!2spl"
+                                        width="400" height="300" style={{border:"0"}} allowFullScreen="" loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                         </div>
                     </div>

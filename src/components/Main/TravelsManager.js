@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Travel from "./Travel";
 
-
-const fetch = require("node-fetch");
-const API_ENDPOINT = 'http://localhost:3000';
+const API_URL = 'http://localhost:3000';
 
 const TravelsManager = ({trips, setTrips, handleChange}) => {
     const [travels, setTravels] = useState([]);
@@ -11,27 +9,14 @@ const TravelsManager = ({trips, setTrips, handleChange}) => {
 
     const getTravels = () => {
         setLoading(true)
-        fetch(`${API_ENDPOINT}/travels`, { headers: { Accept: "application/json" } })
+        fetch(`${API_URL}/travels`)
             .then(response => response.json())
             .then(result => {
                 setTravels(result);
                 setLoading(false);
             })
-            .catch((error) => ({ statusCode: 422, body: String(error) }));
     }
-   /* const fetch = require("node-fetch");
 
-    const API_ENDPOINT = "https://icanhazdadjoke.com/";
-
-    exports.handler = async (event, context) => {
-        return fetch(API_ENDPOINT, { headers: { Accept: "application/json" } })
-            .then((response) => response.json())
-            .then((data) => ({
-                statusCode: 200,
-                body: data.travels,
-            }))
-            .catch((error) => ({ statusCode: 422, body: String(error) }));
-    };*/
     useEffect(() => {
         getTravels();
     }, [])
@@ -62,19 +47,3 @@ const TravelsManager = ({trips, setTrips, handleChange}) => {
 }
 
 export { TravelsManager }
-
-/*const API_URL = 'http://localhost:3000';
-
-const TravelsManager = ({trips, setTrips, handleChange}) => {
-    const [travels, setTravels] = useState([]);
-    const [loading, setLoading] = useState(false);
-
-    const getTravels = () => {
-        setLoading(true)
-        fetch(`${API_URL}/travels`)
-            .then(response => response.json())
-            .then(result => {
-                setTravels(result);
-                setLoading(false);
-            })
-    }*/
