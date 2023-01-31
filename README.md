@@ -11,7 +11,7 @@ Project setup:
 Project run:
 
 ##Built with:
-*React.js
-*SASS
-*Firebase
-*Json-server
+* React.js
+* SASS
+* Firebase
+* Json-server
