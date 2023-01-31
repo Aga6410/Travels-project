@@ -7,7 +7,7 @@ Application where you can choose and reserve tirps. You can see trips you chose 
 Clone the source repository from Github. On the command line enter:
 
 ```
-git clone 
+git clone https://github.com/Aga6410/Travels-project.git
 ```
 
 Project setup:
