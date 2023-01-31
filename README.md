@@ -16,6 +16,12 @@ Project setup:
 npm install
 ```
 
+Start JSON Server:
+
+```
+json-server --watch travels.json
+```
+
 Project run:
 
 ```
